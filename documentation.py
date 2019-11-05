@@ -69,7 +69,7 @@
 @apiGroup Observation
 
 @apiExample {curl} Example Usage:
-	curl -X POST -i -H "Content-Type:application/json" -H "Accept:application/json" -d "[{'timestamp': '2018-03-01 00:00:00', 'payload': {'weight': 123.456}, 'sensor_id': 'ZBin1', 'type': 2}]" http://sensoria.ics.uci.edu:8059/observation/add
+	http://sensoria.ics.uci.edu:8059/observation/get?sensor_id=ZBin1&start_timestamp=2019-08-10+12%3A30%3A00&end_timestamp=2019-11-20+05%3A30%3A00
 
 @apiParam {String} sensor_id ID of sensor to obtain observations from.
 @apiParam {String} start_timestamp The timestamp representing the beginning of the range in which to obtain observations from. 
